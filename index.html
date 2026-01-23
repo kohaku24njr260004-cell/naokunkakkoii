@@ -8,6 +8,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間に応じて文字を変える</title>
+    <script>
+        function updateMessage() {
+            // 現在の時間を取得
+            const now = new Date();
+            const hours = now.getHours(); // 現在の時刻（時間）を取得
+            let message = '';
+
+            // 時間帯に応じて表示するメッセージを変更
+            if (hours >= 6 && hours < 12) {
+                message = 'おはようございます';
+            } else if (hours >= 12 && hours < 18) {
+                message = 'こんにちは';
+            } else if (hours >= 18 && hours < 22) {
+                message = 'こんばんは';
+            } else {
+                message = 'おやすみなさい';
+            }
+
+            // HTML内の要素にメッセージを設定
+            document.getElementById('timeMessage').innerText = message;
+        }
+
+        // ページがロードされたときにメッセージを更新
+        window.onload = function() {
+            updateMessage();
+        };
+
+        // 一定時間ごとにメッセージを更新（例: 1分ごとに更新）
+        setInterval(updateMessage, 60000);
+    </script>
+</head>
+<body>
+    <h1>現在の時間に応じたメッセージ</h1>
+    <p id="timeMessage"></p>
+</body>
+</html>
 </head>
 <body>
   <!-- タイムゾーンID表示用（右上） -->
