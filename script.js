@@ -241,24 +241,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
   updateClockLoop();
 });
-
-function updateClockAndMessage() {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-
-    // 時計表示（例）
-    document.getElementById("clock").textContent =
-        `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
-
-    const messageEl = document.getElementById("message");
-
-    // 時刻によるメッセージ切り替え
-    if (hours === 7 && minutes === 0) {
-        messageEl.textContent = "おはよう！🌅";
-    } else if (hours === 12 && minutes === 0) {
-        messageEl.textContent = "お昼の時間です 🍱";
-    } else if (hours === 18 && minutes === 0) {
-        messageEl.textContent = "こんばんは 🌙";
-    }
-}
