@@ -177,3 +177,14 @@ body {
   #notification.show {
     opacity: 0.9;
   }
+
+  #clock {
+  font-size: 60px;
+  color: white;
+}
+
+#message {
+  margin-top: 15px;
+  font-size: 25px;
+  color: white;
+}
