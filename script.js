@@ -83,6 +83,24 @@ function updateClock() {
   document.getElementById('time').textContent = timeText;
   document.getElementById('date').textContent = dateText + (weekdayFormat !== "NONE" && dateText ? ` ${weekday}` : "");
 
+  const messageEl = document.getElementById("message");
+
+// hours は partMap.hour なので文字列になっています
+const hourNum = Number(hours);
+
+if (hourNum >= 6 && hourNum < 12) {
+  messageEl.textContent = "おはようございます！";
+}
+else if (hourNum >= 12 && hourNum < 18) {
+  messageEl.textContent = "こんにちは！";
+}
+else if (hourNum >= 18 && hourNum < 24) {
+  messageEl.textContent = "こんばんは！";
+}
+else {
+  messageEl.textContent = "夜更かしですね…";
+}
+
   const tzIdDisplay = document.getElementById('timezoneIdDisplay');
   tzIdDisplay.textContent = currentTimezone;
   tzIdDisplay.style.display = showTimezone ? 'block' : 'none';
