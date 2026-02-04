@@ -92,7 +92,7 @@ if (hourNum >= 6 && hourNum < 12) {
   messageEl.textContent = "おはようございます！";
 }
 else if (hourNum >= 12 && hourNum < 18) {
-  messageEl.textContent = "プログラミング！";
+  messageEl.textContent = "プログラミング";
 }
 else if (hourNum >= 18 && hourNum < 24) {
   messageEl.textContent = "こんばんは！";
