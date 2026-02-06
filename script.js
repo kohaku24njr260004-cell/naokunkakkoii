@@ -87,11 +87,12 @@ function updateClock() {
 
 // hours は partMap.hour なので文字列になっています
 const hourNum = Number(hours);
+const minuteNum = Number(minutes);
 
 if (hourNum >= 6 && hourNum < 12) {
   messageEl.textContent = "おはようございます！";
 }
-else if (hourNum >= 12 && hourNum < 18) {
+else if (hourNum >= 12 && minuteNum >= 30 && hourNum < 18) {
   messageEl.textContent = "プログラミング";
 }
 else if (hourNum >= 18 && hourNum < 24) {
