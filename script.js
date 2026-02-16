@@ -95,25 +95,25 @@ if (hourNum >= 9 &&  minuteNum >= 30 && hourNum < 9 && minuteNum < 45) {
 else if (hourNum >= 9 && minuteNum >= 45 && hourNum < 10 && minuteNum < 30) {
   messageEl.textContent = "PBL";
 }
-else if (hourNum >= 10 && minuteNum >= 30 && hourNum < 10 && minuteNum <35) {
+else if (hourNum === 10 && minuteNum >= 30 && minuteNum <35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
 else if (hourNum >= 10 && minuteNum >= 45 && hourNum < 11 && minuteNum < 30) {
   messageEl.textContent = "PBL";
 }
-else if (hourNum >= 11 && minuteNum >= 30 && hourNum < 11 && minuteNum < 35) {
+else if (hourNum === 11 && minuteNum >= 30 && minuteNum < 35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
 else if (hourNum >= 11 && minuteNum >= 45 && hourNum < 12 && minuteNum < 30) {
   messageEl.textContent = "基礎学習";
 }
-else if (hourNum >= 12 && minuteNum >= 30 && hourNum < 12 && minuteNum < 35) {
+else if (hourNum === 12 && minuteNum >= 30 && minuteNum < 35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
 else if (hourNum >= 13 && minuteNum >= 15 && hourNum < 14) {
   messageEl.textContent = "基礎学習";
 }
-else if (hourNum >= 14 && hourNum < 14 && minuteNum < 5) {
+else if (hourNum === 14 && minuteNum >= 0 && minuteNum < 5) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
 else if (hourNum >= 14 && minuteNum >= 15 && hourNum < 15) {
