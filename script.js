@@ -122,7 +122,7 @@ else if (hourNum >= 14 && minuteNum >= 15 && hourNum < 15) {
 else if (hourNum === 15 && minuteNum >= 0 && minuteNum < 5) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 15 && minuteNum >= 15 && hourNum < 16) {
+else if (hourNum === 15 && minuteNum >= 15 && hourNum < 16) {
   messageEl.textContent = "自由選択";
 }
 else if (hourNum === 16 && minuteNum >= 0 && minuteNum < 5) {
