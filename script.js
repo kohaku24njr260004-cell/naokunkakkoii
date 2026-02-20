@@ -89,34 +89,34 @@ function updateClock() {
 const hourNum = Number(hours);
 const minuteNum = Number(minutes);
 
-if (hourNum >= 9 &&  minuteNum >= 30 && hourNum < 9 && minuteNum < 45) {
+if (hourNum === 9 &&  minuteNum >= 30 && minuteNum < 45) {
   messageEl.textContent = "始まりの会";
 }
-else if (hourNum >= 9 && minuteNum >= 45 && hourNum < 10 && minuteNum < 30) {
+else if (hourNum === 9 && minuteNum >= 45 && hourNum < 10 && minuteNum < 30) {
   messageEl.textContent = "PBL";
 }
 else if (hourNum === 10 && minuteNum >= 30 && minuteNum <35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 10 && minuteNum >= 45 && hourNum < 11 && minuteNum < 30) {
+else if (hourNum === 10 && minuteNum >= 45 && hourNum < 11 && minuteNum < 30) {
   messageEl.textContent = "PBL";
 }
 else if (hourNum === 11 && minuteNum >= 30 && minuteNum < 35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 11 && minuteNum >= 45 && hourNum < 12 && minuteNum < 30) {
+else if (hourNum === 11 && minuteNum >= 45 && hourNum < 12 && minuteNum < 30) {
   messageEl.textContent = "基礎学習";
 }
 else if (hourNum === 12 && minuteNum >= 30 && minuteNum < 35) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 13 && minuteNum >= 15 && hourNum < 14) {
+else if (hourNum === 13 && minuteNum >= 15 && hourNum < 14) {
   messageEl.textContent = "基礎学習";
 }
 else if (hourNum === 14 && minuteNum >= 0 && minuteNum < 5) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 14 && minuteNum >= 15 && hourNum < 15) {
+else if (hourNum === 14 && minuteNum >= 15 && hourNum < 15) {
   messageEl.textContent = "プログラミング";
 }
 else if (hourNum === 15 && minuteNum >= 0 && minuteNum < 5) {
@@ -128,7 +128,7 @@ else if (hourNum === 15 && minuteNum >= 15 && hourNum < 16) {
 else if (hourNum === 16 && minuteNum >= 0 && minuteNum < 5) {
   messageEl.textContent = "残り5分となりました。日誌を記入してください";
 }
-else if (hourNum >= 16 && minuteNum >= 5 && hourNum < 16 && minuteNum < 25) {
+else if (hourNum === 16 && minuteNum >= 5 && minuteNum < 25) {
   messageEl.textContent = "帰りの会";
 }
 else {
