@@ -89,48 +89,60 @@ function updateClock() {
 const hourNum = Number(hours);
 const minuteNum = Number(minutes);
 
-if (hourNum === 9 &&  minuteNum >= 30 && minuteNum < 45) {
-  messageEl.textContent = "始まりの会";
+let totalMinutes = hourNum * 60 + minuteNum;
+
+if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
+  messageEl.textContent ="始まりの会";
 }
-else if (hourNum === 9 && minuteNum >= 45 && hourNum < 10 && minuteNum < 30) {
-  messageEl.textContent = "PBL";
+
+else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
+  messageEl.textContent ="PBL";
 }
-else if (hourNum === 10 && minuteNum >= 30 && minuteNum <35) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
+
+else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
-else if (hourNum === 10 && minuteNum >= 45 && hourNum < 11 && minuteNum < 30) {
-  messageEl.textContent = "PBL";
+
+else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
+  messageEl.textContent ="PBL";
 }
-else if (hourNum === 11 && minuteNum >= 30 && minuteNum < 35) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
+
+else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
-else if (hourNum === 11 && minuteNum >= 45 && hourNum < 12 && minuteNum < 30) {
-  messageEl.textContent = "基礎学習";
+
+else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
+  messageEl.textContent ="基礎学習";
 }
-else if (hourNum === 12 && minuteNum >= 30 && minuteNum < 35) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
+
+else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
-else if (hourNum === 13 && minuteNum >= 15 && hourNum < 14) {
-  messageEl.textContent = "基礎学習";
+
+else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
+  messageEl.textContent ="基礎学習";
 }
-else if (hourNum === 14 && minuteNum >= 0 && minuteNum < 5) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
+
+else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
-else if (hourNum === 14 && minuteNum >= 15 && hourNum < 15) {
-  messageEl.textContent = "プログラミング";
+
+else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
+  messageEl.textContent ="プログラミング";
 }
-else if (hourNum === 15 && minuteNum >= 0 && minuteNum < 5) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
+
+else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
-else if (hourNum === 15 && minuteNum >= 15 && hourNum < 16) {
-  messageEl.textContent = "自由選択";
+
+else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
+  messageEl.textContent ="自由選択";
 }
-else if (hourNum === 16 && minuteNum >= 0 && minuteNum < 5) {
-  messageEl.textContent = "残り5分となりました。日誌を記入してください";
-}
-else if (hourNum === 16 && minuteNum >= 5 && minuteNum < 25) {
+
+else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
   messageEl.textContent = "帰りの会";
 }
+
 else {
   messageEl.textContent = "休憩時間";
 }
@@ -139,7 +151,6 @@ else {
   tzIdDisplay.textContent = currentTimezone;
   tzIdDisplay.style.display = showTimezone ? 'block' : 'none';
 }
-
 function toggleFullScreen() {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen().catch(err => {
