@@ -88,10 +88,74 @@ function updateClock() {
 // hours は partMap.hour なので文字列になっています
 const hourNum = Number(hours);
 const minuteNum = Number(minutes);
+const dayNum = now.getDay();
 
 let totalMinutes = hourNum * 60 + minuteNum;
 
-if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
+if (dayNum=== 1) {
+  if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
+  messageEl.textContent ="始まりの会";
+}
+
+else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
+  messageEl.textContent ="基礎学習";
+}
+
+else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
+  messageEl.textContent ="基礎学習 / 試験対策講座";
+}
+
+else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
+  messageEl.textContent ="プログラミング / 試験対策講座";
+}
+
+else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
+  messageEl.textContent ="自由選択 / グループディスカッション";
+}
+
+else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
+  messageEl.textContent = "帰りの会";
+}
+
+else {
+  messageEl.textContent = "休憩時間";
+}
+}
+
+if (dayNum ===2) {
+  if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
   messageEl.textContent ="始まりの会";
 }
 
@@ -136,7 +200,11 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択";
+  messageEl.textContent ="自由選択 / グループディスカッション";
+}
+
+else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
 }
 
 else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
@@ -146,6 +214,8 @@ else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
 else {
   messageEl.textContent = "休憩時間";
 }
+}
+
 
   const tzIdDisplay = document.getElementById('timezoneIdDisplay');
   tzIdDisplay.textContent = currentTimezone;
