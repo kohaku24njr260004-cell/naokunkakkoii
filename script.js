@@ -154,7 +154,7 @@ else {
 }
 }
 
-if (dayNum ===2) {
+if (dayNum === 2) {
   if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
   messageEl.textContent ="始まりの会";
 }
@@ -216,7 +216,7 @@ else {
 }
 }
 
-if (dayNum ===3) {
+if (dayNum === 3) {
   if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
   messageEl.textContent ="始まりの会";
 }
@@ -263,6 +263,130 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
   messageEl.textContent ="自由選択";
+}
+
+else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
+  messageEl.textContent = "帰りの会";
+}
+
+else {
+  messageEl.textContent = "休憩時間";
+}
+}
+
+if (dayNum === 4) {
+  if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
+  messageEl.textContent ="始まりの会";
+}
+
+else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
+  messageEl.textContent ="基礎学習";
+}
+
+else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
+  messageEl.textContent ="基礎学習 / プログラミング";
+}
+
+else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
+  messageEl.textContent ="プログラミング";
+}
+
+else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
+  messageEl.textContent ="自由選択";
+}
+
+else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 16 * 60 + 5 && totalMinutes < 16 * 60 + 25) {
+  messageEl.textContent = "帰りの会";
+}
+
+else {
+  messageEl.textContent = "休憩時間";
+}
+}
+
+if (dayNum ===5) {
+  if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
+  messageEl.textContent ="始まりの会";
+}
+
+else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
+  messageEl.textContent ="PBL";
+}
+
+else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
+  messageEl.textContent ="基礎学習 / 英検三級対策講座";
+}
+
+else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
+  messageEl.textContent ="基礎学習";
+}
+
+else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
+  messageEl.textContent ="プログラミング";
+}
+
+else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
+  messageEl.textContent ="残り5分となりました。日誌を記入してください";
+}
+
+else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
+  messageEl.textContent ="自由選択 / ミライ";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
