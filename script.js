@@ -340,7 +340,7 @@ else {
 }
 }
 
-if (dayNum ===5) {
+if (dayNum === 5) {
   if(totalMinutes >= 9 * 60 + 30 && totalMinutes < 9 * 60 + 45){
   messageEl.textContent ="始まりの会";
 }
