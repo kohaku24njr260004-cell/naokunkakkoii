@@ -98,7 +98,7 @@ if (dayNum=== 1) {
 }
 
 else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
-  messageEl.textContent ="PBL";
+  messageEl.textContent ="コミュニティ活動";
 }
 
 else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
@@ -106,7 +106,7 @@ else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
 }
 
 else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
-  messageEl.textContent ="PBL";
+  messageEl.textContent ="コミュニティ活動";
 }
 
 else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
@@ -114,7 +114,7 @@ else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
 }
 
 else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
-  messageEl.textContent ="基礎学習";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
@@ -122,7 +122,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="基礎学習 / 試験対策講座";
+  messageEl.textContent ="科目学習サポート / 英検準二級対策講座";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -130,7 +130,7 @@ else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
 }
 
 else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
-  messageEl.textContent ="プログラミング / 試験対策講座";
+  messageEl.textContent ="プログラミング / 英検準二級対策講座";
 }
 
 else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
@@ -138,7 +138,7 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択 / グループディスカッション";
+  messageEl.textContent ="選択学習 / グループディスカッション";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
