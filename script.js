@@ -122,7 +122,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="科目学習サポート / 英検準二級対策講座";
+  messageEl.textContent ="科目学習サポート / 英検準二級対策";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -130,7 +130,7 @@ else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
 }
 
 else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
-  messageEl.textContent ="プログラミング / 英検準二級対策講座";
+  messageEl.textContent ="プログラミング / 英検準二級対策";
 }
 
 else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
@@ -176,7 +176,7 @@ else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
 }
 
 else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
-  messageEl.textContent ="基礎学習";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
@@ -184,7 +184,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="基礎学習";
+  messageEl.textContent ="科目学習サポート / リベラルアーツ応用";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -192,7 +192,7 @@ else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
 }
 
 else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
-  messageEl.textContent ="プログラミング";
+  messageEl.textContent ="プログラミング / リベラルアーツ応用";
 }
 
 else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
@@ -200,7 +200,7 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択 / グループディスカッション";
+  messageEl.textContent ="選択学習 / グループディスカッション";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
@@ -238,7 +238,7 @@ else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
 }
 
 else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
-  messageEl.textContent ="基礎学習 / N-English 初級 / 英検準二級・二級対策講座 / 応用コミュニケーション";
+  messageEl.textContent ="科目学習サポート / 英語初級";
 }
 
 else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
@@ -246,7 +246,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="基礎学習 / プログラミング基礎";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -254,7 +254,7 @@ else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
 }
 
 else if (totalMinutes >= 14 * 60 + 15 && totalMinutes < 15 * 60) {
-  messageEl.textContent ="プログラミング / プログラミング基礎";
+  messageEl.textContent ="プログラミング";
 }
 
 else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
@@ -262,7 +262,7 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択";
+  messageEl.textContent ="選択学習";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
@@ -284,7 +284,7 @@ if (dayNum === 4) {
 }
 
 else if (totalMinutes >= 9 * 60 + 45 && totalMinutes < 10 * 60 + 30) {
-  messageEl.textContent ="PBL";
+  messageEl.textContent ="キャンパス授業";
 }
 
 else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
@@ -292,7 +292,7 @@ else if (totalMinutes >= 10 * 60 + 30 && totalMinutes < 10 * 60 + 35) {
 }
 
 else if (totalMinutes >= 10 * 60 + 45 && totalMinutes < 11 * 60 + 30) {
-  messageEl.textContent ="PBL";
+  messageEl.textContent ="キャンパス授業";
 }
 
 else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
@@ -300,7 +300,7 @@ else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
 }
 
 else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
-  messageEl.textContent ="基礎学習";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
@@ -308,7 +308,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="基礎学習 / プログラミング";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -324,7 +324,7 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択";
+  messageEl.textContent ="選択学習";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
@@ -362,7 +362,7 @@ else if (totalMinutes >= 11 * 60 + 30 && totalMinutes < 11 * 60 + 35) {
 }
 
 else if (totalMinutes >= 11 * 60 + 45 && totalMinutes < 12 * 60 + 30) {
-  messageEl.textContent ="基礎学習 / 英検三級対策講座";
+  messageEl.textContent ="科目学習サポート / 英語中級";
 }
 
 else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
@@ -370,7 +370,7 @@ else if (totalMinutes >= 12 * 60 + 30 && totalMinutes < 12 * 60 + 35) {
 }
 
 else if (totalMinutes >= 13 * 60 + 15 && totalMinutes < 14 * 60) {
-  messageEl.textContent ="基礎学習";
+  messageEl.textContent ="科目学習サポート";
 }
 
 else if (totalMinutes >= 14 * 60 && totalMinutes < 14 * 60 + 5) {
@@ -386,7 +386,7 @@ else if (totalMinutes >= 15 * 60 && totalMinutes < 15 * 60 + 5) {
 }
 
 else if (totalMinutes >= 15 * 60 + 15 && totalMinutes < 16 * 60) {
-  messageEl.textContent ="自由選択 / ミライ";
+  messageEl.textContent ="選択学習 / ミライ";
 }
 
 else if (totalMinutes >= 16 * 60 && totalMinutes < 16 * 60 + 5) {
