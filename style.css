@@ -186,7 +186,7 @@ body {
 #message {
   margin-top: 15px;
   font-size: 40px;
-  color: white;
+  color: inherit;
   text-align: center;
   margin-top: 20px;
 }
