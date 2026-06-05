@@ -652,6 +652,12 @@ function applySettings(settings) {
   document.getElementById('date').style.fontSize =
     settings.dateSize + "vw";
 
+  document.getElementById('message').style.color =
+  settings.textColor;
+
+  document.getElementById('message').style.fontFamily =
+  settings.dateFont;
+
   document.getElementById('timeSizeValue').textContent =
     settings.timeSize;
 
