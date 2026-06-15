@@ -565,6 +565,9 @@ function getSettings() {
 
     showTimezone:
       document.getElementById('showTimezoneLabel').checked,
+    
+    messageFont:
+    document.getElementById('messageFontSelect').value,
   };
 }
 
@@ -621,6 +624,12 @@ function applySettings(settings) {
 
   document.getElementById('showTimezoneLabel').checked =
     settings.showTimezone !== false;
+
+  document.getElementById('messageFontSelect').value =
+  settings.messageFont;  
+
+  document.getElementById('message').style.fontFamily =
+  settings.messageFont;
 
   dateFormat = settings.dateFormat;
   weekdayFormat = settings.weekdayFormat;
@@ -718,10 +727,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
       timezone: "Asia/Tokyo",
 
-      showTimezone: true
+      showTimezone: true,
+      messageFont:"'Courier New'",
     });
   }
-
+defaultsettings
   /* =========================
      メニュー
   ========================= */
@@ -817,7 +827,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
         timezone: "Asia/Tokyo",
 
-        showTimezone: true
+        showTimezone: true,
+        messageFont:"'Courier New'",
       };
 
       applySettings(defaultSettings);
