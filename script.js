@@ -818,8 +818,8 @@ window.addEventListener('DOMContentLoaded', () => {
         timeFont: "'Courier New'",
         dateFont: "'Courier New'",
 
-        timeSize: "8",
-        dateSize: "4",
+        timeSize: "16",
+        dateSize: "8",
 
         dateFormat: "YYYY/MM/DD",
         weekdayFormat: "JP",
