@@ -731,7 +731,7 @@ window.addEventListener('DOMContentLoaded', () => {
       messageFont:"'Courier New'",
     });
   }
-  
+
   /* =========================
      メニュー
   ========================= */
@@ -754,7 +754,7 @@ window.addEventListener('DOMContentLoaded', () => {
   ========================= */
 
   document.querySelectorAll(
-    '#bgColorPicker, #textColorPicker, #timeFontSelect, #dateFontSelect, #dateFormatSelect, #weekdayFormatSelect, #timeUnitSelect, #timezoneSelect'
+    '#bgColorPicker, #textColorPicker, #timeFontSelect, #dateFontSelect, #dateFormatSelect, #weekdayFormatSelect, #timeUnitSelect, #timezoneSelect, #messageFontSelect'
   ).forEach(el => {
 
     el.addEventListener('change', () => {
