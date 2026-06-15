@@ -731,7 +731,7 @@ window.addEventListener('DOMContentLoaded', () => {
       messageFont:"'Courier New'",
     });
   }
-defaultsettings
+  
   /* =========================
      メニュー
   ========================= */
