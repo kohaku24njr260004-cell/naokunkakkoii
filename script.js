@@ -222,11 +222,20 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,13,15,14,0))
       return "科目学習サポート / リベラルアーツ応用";
 
+    else if (range(totalMinutes,14,0,14,5))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,14,15,15,0))
       return "プログラミング / リベラルアーツ応用";
 
+    else if (range(totalMinutes,15,0,15,5))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,15,15,16,0))
       return "選択学習 / グループディスカッション";
+
+     else if (range(totalMinutes,16,0,16,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,16,5,16,25))
       return "帰りの会";
@@ -244,20 +253,41 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,9,45,10,30))
       return "PBL";
 
+    else if (range(totalMinutes,10,30,10,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,10,45,11,30))
       return "PBL";
+
+    else if (range(totalMinutes,11,30,11,35))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,11,45,12,30))
       return "科目学習サポート / 英語初級";
 
+    else if (range(totalMinutes,12,30,12,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,13,15,14,0))
       return "科目学習サポート";
 
-    else if (range(totalMinutes,14,15,15,0))
+    else if (range(totalMinutes,14,0,14,5))
+      return "残り5分となりました。日誌を記入してください";
+
+    else if (range(totalMinutes,14,15,14,55))
       return "プログラミング";
+
+    else if (range(totalMinutes,14,55,15,0))
+      return "残り10分になりました。今日の成果物をスラックに投稿しましょう";
+
+    else if (range(totalMinutes,15,0,15,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,15,15,16,0))
       return "選択学習";
+
+    else if (range(totalMinutes,16,0,16,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,16,5,16,25))
       return "帰りの会";
@@ -275,20 +305,38 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,9,45,10,30))
       return "キャンパス授業";
 
+    else if (range(totalMinutes,10,30,10,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,10,45,11,30))
       return "キャンパス授業";
+
+    else if (range(totalMinutes,11,30,11,35))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,11,45,12,30))
       return "科目学習サポート";
 
+    else if (range(totalMinutes,12,30,12,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,13,15,14,0))
       return "科目学習サポート";
+
+    else if (range(totalMinutes,14,0,14,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,14,15,15,0))
       return "プログラミング";
 
+    else if (range(totalMinutes,15,0,15,5))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,15,15,16,0))
       return "選択学習";
+
+    else if (range(totalMinutes,16,0,16,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,16,5,16,25))
       return "帰りの会";
@@ -306,20 +354,38 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,9,45,10,30))
       return "PBL";
 
+    else if (range(totalMinutes,10,30,10,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,10,45,11,30))
       return "PBL";
+
+    else if (range(totalMinutes,11,30,11,35))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,11,45,12,30))
       return "科目学習サポート / 英語中級";
 
+    else if (range(totalMinutes,12,30,12,35))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,13,15,14,0))
       return "科目学習サポート";
+
+    else if (range(totalMinutes,14,0,14,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,14,15,15,0))
       return "プログラミング";
 
+    else if (range(totalMinutes,15,0,15,5))
+      return "残り5分となりました。日誌を記入してください";
+
     else if (range(totalMinutes,15,15,16,0))
       return "選択学習 / ミライ";
+
+    else if (range(totalMinutes,16,0,16,5))
+      return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,16,5,16,25))
       return "帰りの会";
