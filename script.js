@@ -176,8 +176,11 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
-    else if (range(totalMinutes,14,15,15,0))
+    else if (range(totalMinutes,14,15,14,55))
       return "プログラミング / 英検準二級対策";
+
+    else if (range(totalMinutes,14,55,15,0))
+      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -225,8 +228,11 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
-    else if (range(totalMinutes,14,15,15,0))
+    else if (range(totalMinutes,14,15,14,55))
       return "プログラミング / リベラルアーツ応用";
+
+    else if (range(totalMinutes,14,55,15,0))
+      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -278,7 +284,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果物をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -326,8 +332,11 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
-    else if (range(totalMinutes,14,15,15,0))
+    else if (range(totalMinutes,14,15,14,55))
       return "プログラミング";
+
+    else if (range(totalMinutes,14,55,15,0))
+      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -375,8 +384,11 @@ function getClassMessage(totalMinutes, dayNum) {
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
-    else if (range(totalMinutes,14,15,15,0))
+    else if (range(totalMinutes,14,15,14,55))
       return "プログラミング";
+
+    else if (range(totalMinutes,14,55,15,0))
+      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
