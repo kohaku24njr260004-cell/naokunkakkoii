@@ -793,8 +793,8 @@ window.addEventListener('DOMContentLoaded', () => {
       bgColor: "#dddddd",
       textColor: "#000000",
 
-      timeFont: "'Courier New'",
-      dateFont: "'Courier New'",
+      timeFont: "'Jost'",
+      dateFont: "'Jost'",
 
       timeSize: "16",
       dateSize: "8",
@@ -893,8 +893,8 @@ window.addEventListener('DOMContentLoaded', () => {
         bgColor: "#dddddd",
         textColor: "#000000",
 
-        timeFont: "'Courier New'",
-        dateFont: "'Courier New'",
+        timeFont: "'Jost'",
+        dateFont: "'Jost'",
 
         timeSize: "16",
         dateSize: "8",
