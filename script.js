@@ -790,8 +790,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     applySettings({
 
-      bgColor: "#000000",
-      textColor: "#dddddd",
+      bgColor: "#dddddd",
+      textColor: "#000000",
 
       timeFont: "'Courier New'",
       dateFont: "'Courier New'",
@@ -806,7 +806,7 @@ window.addEventListener('DOMContentLoaded', () => {
       timezone: "Asia/Tokyo",
 
       showTimezone: true,
-      messageFont:"'Courier New'",
+      messageFont:"'Noto Sans JP'",
     });
   }
 
@@ -890,8 +890,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
       const defaultSettings = {
 
-        bgColor: "#000000",
-        textColor: "#dddddd",
+        bgColor: "#dddddd",
+        textColor: "#000000",
 
         timeFont: "'Courier New'",
         dateFont: "'Courier New'",
@@ -906,7 +906,7 @@ window.addEventListener('DOMContentLoaded', () => {
         timezone: "Asia/Tokyo",
 
         showTimezone: true,
-        messageFont:"'Courier New'",
+        messageFont:"'Noto Sans JP'",
       };
 
       applySettings(defaultSettings);
