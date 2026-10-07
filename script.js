@@ -275,13 +275,13 @@ function getClassMessage(totalMinutes, dayNum) {
       return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,13,15,14,0))
-      return "科目学習サポート";
+      return "科目学習サポート / プロNβ";
 
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,14,15,14,55))
-      return "プログラミング";
+      return "プログラミング / プロNβ";
 
     else if (range(totalMinutes,14,55,15,0))
       return "残り10分になりました。今日の成果をスラックに投稿しましょう";
@@ -379,13 +379,13 @@ function getClassMessage(totalMinutes, dayNum) {
       return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,13,15,14,0))
-      return "科目学習サポート";
+      return "科目学習サポート / プロNβ";
 
     else if (range(totalMinutes,14,0,14,5))
       return "残り5分となりました。日誌を記入してください";
 
     else if (range(totalMinutes,14,15,14,55))
-      return "プログラミング";
+      return "プログラミング / プロNβ";
 
     else if (range(totalMinutes,14,55,15,0))
       return "残り10分になりました。今日の成果をスラックに投稿しましょう";
