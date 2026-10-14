@@ -52,6 +52,7 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   if (dayNum === 1) {
     schedule = [
       [9,30,"始まりの会"],
+      [9,43,"9:43をお知らせします"]
       [9,45,"コミュニティ活動"],
       [10,45,"コミュニティ活動"],
       [11,45,"科目学習サポート"],
@@ -65,7 +66,8 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   /* 火曜 */
   else if (dayNum === 2) {
     schedule = [
-      [9,30,"始まりの会"],
+      [9, 30, "始まりの会"],
+      [9,43,"9:43をお知らせします"]
       [9,45,"PBL"],
       [10,45,"PBL"],
       [11,45,"科目学習サポート"],
@@ -79,7 +81,8 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   /* 水曜 */
   else if (dayNum === 3) {
     schedule = [
-      [9,30,"始まりの会"],
+      [9, 30, "始まりの会"],
+      [9,43,"9:43をお知らせします"]
       [9,45,"PBL"],
       [10,45,"PBL"],
       [11,45,"科目学習サポート / 英語初級"],
@@ -93,7 +96,8 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   /* 木曜 */
   else if (dayNum === 4) {
     schedule = [
-      [9,30,"始まりの会"],
+      [9, 30, "始まりの会"],
+      [9,43,"9:43をお知らせします"]
       [9,45,"キャンパス授業"],
       [10,45,"キャンパス授業"],
       [11,45,"科目学習サポート"],
@@ -107,7 +111,8 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   /* 金曜 */
   else if (dayNum === 5) {
     schedule = [
-      [9,30,"始まりの会"],
+      [9, 30, "始まりの会"],
+      [9,43,"9:43をお知らせします"]
       [9,45,"PBL"],
       [10,45,"PBL"],
       [11,45,"科目学習サポート / 英語中級"],
@@ -149,7 +154,10 @@ function getClassMessage(totalMinutes, dayNum) {
 
   if (dayNum === 1) {
 
-    if (range(totalMinutes,9,30,9,45))
+    if (range(totalMinutes,9,43,9,44))
+      return "9:43をお知らせします";
+
+    else if (range(totalMinutes,9,30,9,45))
       return "始まりの会";
 
     else if (range(totalMinutes,9,45,10,30))
@@ -201,7 +209,10 @@ function getClassMessage(totalMinutes, dayNum) {
 
   else if (dayNum === 2) {
 
-    if (range(totalMinutes,9,30,9,45))
+    if (range(totalMinutes,9,43,9,44))
+      return "9:43をお知らせします";
+
+    else if (range(totalMinutes, 9, 30, 9, 45))
       return "始まりの会";
 
     else if (range(totalMinutes,9,45,10,30))
@@ -253,7 +264,10 @@ function getClassMessage(totalMinutes, dayNum) {
 
   else if (dayNum === 3) {
 
-    if (range(totalMinutes,9,30,9,45))
+    if (range(totalMinutes,9,43,9,44))
+      return "9:43をお知らせします";
+
+    else if (range(totalMinutes, 9, 30, 9, 45))
       return "始まりの会";
 
     else if (range(totalMinutes,9,45,10,30))
@@ -305,7 +319,10 @@ function getClassMessage(totalMinutes, dayNum) {
 
   else if (dayNum === 4) {
 
-    if (range(totalMinutes,9,30,9,45))
+    if (range(totalMinutes,9,43,9,44))
+      return "9:43をお知らせします";
+
+    else if (range(totalMinutes, 9, 30, 9, 45))
       return "始まりの会";
 
     else if (range(totalMinutes,9,45,10,30))
@@ -357,7 +374,10 @@ function getClassMessage(totalMinutes, dayNum) {
 
   else if (dayNum === 5) {
 
-    if (range(totalMinutes,9,30,9,45))
+    if (range(totalMinutes,9,43,9,44))
+      return "9:43をお知らせします";
+
+    else if (range(totalMinutes, 9, 30, 9, 45))
       return "始まりの会";
 
     else if (range(totalMinutes,9,45,10,30))
@@ -643,7 +663,7 @@ function getSettings() {
 
     showTimezone:
       document.getElementById('showTimezoneLabel').checked,
-    
+
     messageFont:
     document.getElementById('messageFontSelect').value,
   };
@@ -704,7 +724,7 @@ function applySettings(settings) {
     settings.showTimezone !== false;
 
   document.getElementById('messageFontSelect').value =
-  settings.messageFont;  
+  settings.messageFont;
 
   document.getElementById('message').style.fontFamily =
   settings.messageFont;
