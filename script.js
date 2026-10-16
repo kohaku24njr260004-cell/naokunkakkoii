@@ -819,7 +819,7 @@ window.addEventListener('DOMContentLoaded', () => {
       timeSize: "16",
       dateSize: "8",
 
-      dateFormat: "MM/DD",
+      dateFormat: "YYYY/MM/DD",
       weekdayFormat: "JP",
       timeUnit: "hms",
 
@@ -919,7 +919,7 @@ window.addEventListener('DOMContentLoaded', () => {
         timeSize: "16",
         dateSize: "8",
 
-        dateFormat: "MM/DD",
+        dateFormat: "YYYY/MM/DD",
         weekdayFormat: "JP",
         timeUnit: "hms",
 
