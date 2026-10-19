@@ -223,7 +223,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング / 英検準二級対策";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をslackに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -278,7 +278,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング / リベラルアーツ応用";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をslackに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -333,7 +333,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング / プロNβ";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をslackに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -388,7 +388,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をslackに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
@@ -443,7 +443,7 @@ function getClassMessage(totalMinutes, dayNum) {
       return "プログラミング / プロNβ";
 
     else if (range(totalMinutes,14,55,15,0))
-      return "残り10分になりました。今日の成果をスラックに投稿しましょう";
+      return "残り10分になりました。今日の成果をslackに投稿しましょう";
 
     else if (range(totalMinutes,15,0,15,5))
       return "残り5分となりました。日誌を記入してください";
