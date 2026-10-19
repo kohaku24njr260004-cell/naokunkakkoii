@@ -6,9 +6,24 @@ let lastBlink = Date.now();
 let currentTimezone = "Asia/Tokyo";
 let showTimezone = true;
 
+const birthdays = [
+  {
+    month: 10,
+    day: 19,
+    name:"横浜"
+  },
+  {
+    month: 5,
+    day: 15,
+    name:"琥白"
+  }
+]
+
 /* =========================
    共通関数
 ========================= */
+
+
 
 function getComplementaryColor(hexColor) {
   const hex = hexColor.replace('#', '');
@@ -140,6 +155,26 @@ function showNextClass(messageEl, totalMinutes, dayNum) {
   }
 
   messageEl.textContent = "本日の予定は終了しました";
+}
+
+
+function updateBirthdayMessage() {
+  const birthdayMessage =
+    document.getElementById("birthdayMessage");
+
+  const now = new Date();
+
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: currentTimezone,
+    month: "numeric",
+    day: "numeric"
+  }).formatToParts(now);
+
+  const partMap = Object.fromEntries(
+    parts.map(part => [part.type, part.value])
+  );
+
+  const month = Number(partMap.month);
 }
 
 /* =========================
