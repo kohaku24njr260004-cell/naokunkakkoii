@@ -763,7 +763,7 @@ function applySettings(settings) {
   settings.textColor;
 
   document.getElementById('message').style.fontFamily =
-    settings.dateFont
+    settings.messageFont;
 
   document.getElementById('timeSizeValue').textContent =
     settings.timeSize;
