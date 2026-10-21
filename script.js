@@ -175,6 +175,21 @@ function updateBirthdayMessage() {
   );
 
   const month = Number(partMap.month);
+  const day = Number(partMap.day);
+
+  const todaysBirthdays = birthdays.filter(person => person.month === month && person.day === day);
+
+  if (todaysBirthdays.length > 0) {
+    birthdayMessage.textContent =
+      todaysBirthdays
+        .map(person => `🎉 ${person.name}の誕生日!🎂`)
+        .join(" ");
+
+    birthdayMessage.style.display = "block";
+  } else {
+    birthdayMessage.textContent = "";
+    birthdayMessage.style.display = "none";
+  }
 }
 
 /* =========================
