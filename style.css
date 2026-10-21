@@ -11,22 +11,22 @@ body {
     position: relative;
     user-select: none;
   }
-  
+
   /* 時計本体 */
   .clock-container {
     text-align: center;
     cursor: pointer;
   }
-  
+
   .time {
     /* font-size: 8vw; */
     margin-bottom: 1vh;
   }
-  
+
   /* .date {
     font-size: 4vw;
   } */
-  
+
   /* ハンバーガーメニュー */
   .hamburger {
     position: absolute;
@@ -40,7 +40,7 @@ body {
     cursor: pointer;
     z-index: 100;
   }
-  
+
   /* 各線のスタイル */
   .hamburger span {
     display: block;
@@ -49,20 +49,20 @@ body {
     border-radius: 2px;
     transition: all 0.3s ease;
   }
-  
+
   /* 開いた時のアニメーション（active） */
   .hamburger.active span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
-  
+
   .hamburger.active span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .hamburger.active span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
-  
+
   /* ハンバーガーメニュー */
   #menu-button {
     position: absolute;
@@ -72,7 +72,7 @@ body {
     cursor: pointer;
     z-index: 100;
   }
-  
+
   /* メニューパネル */
   #menu-panel {
     position: absolute;
@@ -91,31 +91,31 @@ body {
     -webkit-overflow-scrolling: touch; /* ← iOS で慣性スクロール対応 */
     padding-bottom: 80px;
   }
-  
+
   .setting-group button#resetSettings {
     margin-bottom: 60px; /* デフォルトに戻すボタンの下に余白 */
   }
-  
+
   /* 表示時に左からスライドイン */
   #menu-panel.active {
     left: 0;
   }
-  
+
   .setting-group {
     margin-bottom: 15px;
   }
-  
+
   .setting-group label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
   }
-  
+
   .setting-group input,
   .setting-group select {
     width: 100%;
   }
-  
+
   .setting-group input[type="color"] {
     border: 1px solid #555;
     background-color: #111;
@@ -123,13 +123,13 @@ body {
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   .dark-select {
     background-color: #111;
     color: #dddddd;
     border: 1px solid #555;
   }
-  
+
   .setting-group button {
     width: 100%;
     margin-top: 5px;
@@ -140,15 +140,15 @@ body {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .setting-group button:hover {
     background-color: #555;
   }
-  
+
   .setting-group button#resetSettings {
     margin-bottom: 60px;
   }
-  
+
   #timezoneIdDisplay {
     position: absolute;
     top: 10px;
@@ -157,7 +157,7 @@ body {
     color: #aaa;
     z-index: 90;
   }
-  
+
   #notification {
     position: fixed;
     bottom: 10px;
@@ -173,7 +173,7 @@ body {
     pointer-events: none;
     z-index: 200;
   }
-  
+
   #notification.show {
     opacity: 0.9;
   }
@@ -189,4 +189,13 @@ body {
   color: inherit;
   text-align: center;
   margin-top: 20px;
+}
+
+#birthdayMessage {
+    display:none;
+    font-family: 'ZEN丸ゴシック', Jost;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1vw;
 }
