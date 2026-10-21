@@ -9,7 +9,7 @@ let showTimezone = true;
 const birthdays = [
   {
     month: 10,
-    day: 19,
+    day: 21,
     name:"横浜"
   },
   {
