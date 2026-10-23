@@ -8,14 +8,29 @@ let showTimezone = true;
 
 const birthdays = [
   {
-    month: 10,
-    day: 21,
+    month: 6,
+    day: 26,
     name:"横浜"
   },
   {
     month: 5,
     day: 15,
     name:"琥白"
+  },
+  {
+    month: 2,
+    day: 2,
+    name:"なおくん"
+  },
+  {
+    month: 11,
+    day: 9,
+    name:"よしだまさき"
+  },
+  {
+    month: 10,
+    day: 23,
+    name:"あ"
   }
 ]
 
