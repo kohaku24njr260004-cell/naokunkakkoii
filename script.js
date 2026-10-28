@@ -28,9 +28,9 @@ const birthdays = [
     name:"よしだまさき"
   },
   {
-    month: 10,
-    day: 23,
-    name:"あ"
+    month: 12,
+    day: 29,
+    name:"だいちゃん"
   }
 ]
 
