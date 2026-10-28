@@ -888,7 +888,7 @@ window.addEventListener('DOMContentLoaded', () => {
       dateSize: "8",
 
       dateFormat: "YYYY/MM/DD",
-      weekdayFormat: "JP",
+      weekdayFormat: "EN",
       timeUnit: "hms",
 
       timezone: "Asia/Tokyo",
@@ -988,7 +988,7 @@ window.addEventListener('DOMContentLoaded', () => {
         dateSize: "8",
 
         dateFormat: "YYYY/MM/DD",
-        weekdayFormat: "JP",
+        weekdayFormat: "EN",
         timeUnit: "hms",
 
         timezone: "Asia/Tokyo",
