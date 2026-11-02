@@ -202,7 +202,7 @@ body {
 }
 
 #menu-button:hover {
-    transform: scale(1.08);
+    transform: scale(0.98);
     background-color: rgba(80,130,255,0.18);
     box-shadow: 0 0 18px rgba(80,130,255,0.2);
 }
