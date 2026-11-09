@@ -202,7 +202,7 @@ body {
 }
 
 #menu-button:hover {
-    transform: scale(0.98);
+    transform: scale(0.9);
     background-color: rgba(80,130,255,0.18);
     box-shadow: 0 0 18px rgba(80,130,255,0.2);
 }
@@ -213,5 +213,5 @@ body {
 }
 
 #menu-button:active {
-    transform: scale(0.9);
+    transform: scale(0.96);
 }
