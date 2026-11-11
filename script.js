@@ -874,6 +874,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     applySettings(JSON.parse(saved));
 
+    settings.dateSize = "8";
+
+    applySettings(settings);
+
   } else {
 
     applySettings({
