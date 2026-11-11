@@ -215,3 +215,7 @@ body {
 #menu-button:active {
     transform: scale(0.96);
 }
+
+@media screen and (max-width: 768px) and (min-width: 768px){
+
+}
